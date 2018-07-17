@@ -24,4 +24,7 @@
 			<link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico?">
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
+		{% if site.google_analytics and jekyll.environment == 'production' %}
+			{% include analytics.html %}
+		{% endif %}
 	</head>
