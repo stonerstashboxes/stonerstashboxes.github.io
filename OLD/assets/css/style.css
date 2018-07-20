@@ -696,7 +696,7 @@
 
 	#banner
 	{
-		background: #CCE8F4 url('../images/ssb-banner-background.jpg');
+		background: #CCE8F4 url('../images/pic01.jpg');
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -850,4 +850,13 @@
 			background: rgba(255,255,255,0.05);
 			border-radius: 5px;
 			margin: 0;
+		}
+
+		/*********************************************************************************/
+		/* Real Responsive Grid                                                          */
+		/*********************************************************************************/
+		.responsive-wrapper{
+			display:grid;
+			grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+		  grid-gap: 30px;
 		}
